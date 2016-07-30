@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>deepspace-browser test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../../src/deepspace-browser/deepspace-browser.html">
+  </head>
+  <body>
+
+    <test-fixture id="basic">
+      <template>
+        <deepspace-browser></deepspace-browser>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('deepspace-browser', function() {
+
+        test('instantiating the element works', function() {
+          let element = fixture('basic');
+          assert.equal(element.is, 'deepspace-browser');
+        });
+
+      });
+    </script>
+  </body>
+</html>

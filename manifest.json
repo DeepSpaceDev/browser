@@ -1,0 +1,7 @@
+{
+  "name": "deepspace-browser",
+  "short_name": "deepspace-browser",
+  "description": "A material design version of a broswer using iframes.",
+  "start_url": "/",
+  "display": "standalone"
+}
